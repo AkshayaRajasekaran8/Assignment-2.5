@@ -1,0 +1,49 @@
+1. Explain what is a cluster and what is a hadoop cluster.
+ -Cluster:
+       *A cluster is a special type of computational cluster designed specifically 
+        for the purpose of storing and analyzing huge amounts of unstructured data 
+        in a computing environment which is distributed in nature.
+       *It distributes the data analysis workload across multiple cluster nodes that 
+        work to process the data in parallel.
+       *The benefit of clusters is its scalability.
+       *Clusters are resistant to failures.
+
+ -Hadoop cluster:
+       *Hadoop cluster boosts the speed of data analysis applications.
+       *A computer cluster used for Hadoop is called Hadoop Cluster. 
+       *Hadoop clusters are scalable and highly resistant to failures.
+       *Hadoop cluster is designed specifically for storing and analyzing huge amounts of 
+         unstructured data.
+       *Hadoop clusters are composed of three types of node: 
+        -master nodes
+        -worker nodes
+        -client nodes. 
+      *Hadoop cluster will run in low cost commodity hardwares.
+      *Clusters of three or more machines typically use a single NameNode and ResourceManager
+       with all the other nodes as slave nodes. 
+
+
+2. Explain the components of Hadoop 1.x.
+
+  -The components of hadoop are:                
+   1)HDFS: Hadoop Distributed File System takes the data breaks them into pieces 
+            and then distributes them to different nodes in a cluster and thus allows the parallel processing.     
+     -The two components of HDFS are:
+           -Namenode
+           -Datanode
+     *Namenode:
+               -A namenode stores the metadata.
+               -A namenode acts as the master node.        
+               -It stores the information about the datanodes like  how many blocks of data
+                   are stored in the nodes,locations of nodes,which node holds the data,etc.
+     *Secondary namenode:
+              -Secondary namenodes performs the activity of house-keeping for the name nodes like 
+                periodic merging and it is used for edits.
+     *Datanode:
+              -The data nodes nodes are used to store the actual data.
+              -The datanode acts as slave nodes.     
+              -It stores the data in terms of blocks.The default size of the block is 64MB.
+              -The data node acts as heart beat of the name node as it periodically sends signals to the name node
+                to check whether it is active currently.
+
+   
